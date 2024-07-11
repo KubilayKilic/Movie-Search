@@ -63,36 +63,9 @@ This React Native application leverages several modern web technologies and Reac
 1. **React Hooks**: 
    - `useState`: Used for managing component-level state (search input, movie details).
 
-2. **React Native Components**:
-   - `View`: For creating container layouts.
-   - `Text`: For displaying text content.
-   - `Image`: For rendering movie posters.
-   - `TextInput`: For the search input field.
-   - `Button`: For the search action button.
-
-3. **Third-party Libraries**:
+2. **Third-party Libraries**:
    - `react-native-gesture-handler`: Provides the `GestureHandlerRootView` component for handling gestures.
    - `axios`: Used for making HTTP requests to the TMDb API.
 
-4. **API Integration**:
+3. **API Integration**:
    - The Movie Database (TMDb) API: Used to fetch movie data based on user searches.
-
-5. **Async/Await**: 
-   - Used in the `saveMovie` function for handling asynchronous API calls.
-
-6. **Error Handling**:
-   - Basic error handling is implemented in the API call using try/catch.
-
-7. **Conditional Rendering**:
-   - Used to display movie details only when available.
-
-8. **String Manipulation**:
-   - Used for extracting the release year from the full date.
-
-9. **Number Formatting**:
-   - `toFixed()` method used to format the vote average.
-
-10. **Inline Styling**:
-    - React Native's inline style objects are used for component styling.
-
-This app demonstrates a practical implementation of these technologies in a real-world scenario, creating a functional movie search application with a clean and intuitive user interface.
