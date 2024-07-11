@@ -10,7 +10,7 @@ export default function Index() {
   const [releaseYear, setReleaseYear] = useState("");
   const [voteAvg, setVoteAvg] = useState("");
 
-  const TMDB_API_KEY = "aa68f521ebd0de281b715c161add4cf7";
+  const TMDB_API_KEY = "YOUR_TMDB_API_KEY";
 
   const saveMovie = async (movieName: string) => {
     try {
