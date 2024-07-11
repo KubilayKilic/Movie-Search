@@ -1,51 +1,98 @@
-# Welcome to your Expo app 👋
+# Movie Search App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a React Native application that allows users to search for movies using The Movie Database (TMDb) API.
 
-## Get started
+## Features
 
-1. Install dependencies
+- Search for movies by title
+- Display movie details including:
+  - Movie title
+  - Movie poster
+  - Release year
+  - Average vote rating
 
-   ```bash
-   npm install
-   ```
+## Prerequisites
 
-2. Start the app
+Before running this application, make sure you have the following installed:
 
-   ```bash
-    npx expo start
-   ```
+- Node.js
+- React Native environment
+- Expo CLI (if using Expo)
 
-In the output, you'll find options to open the app in a
+## Installation
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Clone this repository
+2. Navigate to the project directory
+3. Install dependencies: npm install or yarn install
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
-## Get a fresh project
+## Configuration
 
-When you're ready, run:
+The app uses The Movie Database (TMDb) API. You need to set up your API key:
 
-```bash
-npm run reset-project
-```
+1. Sign up for an account at [TMDb](https://www.themoviedb.org/)
+2. Obtain your API key
+3. Replace `TMDB_API_KEY` in the code with your actual API key
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Running the App
 
-## Learn more
+To start the app, run: npx expo start
 
-To learn more about developing your project with Expo, look at the following resources:
+## Usage
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+1. Enter a movie title in the search box
+2. Press the "Ara" (Search) button
+3. View the movie details displayed below
 
-## Join the community
+## Dependencies
 
-Join our community of developers creating universal apps.
+- React
+- React Native
+- react-native-gesture-handler
+- axios
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-"# Movie-Search" 
+## Note
+
+This app is a basic implementation and can be extended with more features and improved error handling.
+
+
+# Technologies and Features Used in This App
+
+This React Native application leverages several modern web technologies and React features:
+
+1. **React Hooks**: 
+   - `useState`: Used for managing component-level state (search input, movie details).
+
+2. **React Native Components**:
+   - `View`: For creating container layouts.
+   - `Text`: For displaying text content.
+   - `Image`: For rendering movie posters.
+   - `TextInput`: For the search input field.
+   - `Button`: For the search action button.
+
+3. **Third-party Libraries**:
+   - `react-native-gesture-handler`: Provides the `GestureHandlerRootView` component for handling gestures.
+   - `axios`: Used for making HTTP requests to the TMDb API.
+
+4. **API Integration**:
+   - The Movie Database (TMDb) API: Used to fetch movie data based on user searches.
+
+5. **Async/Await**: 
+   - Used in the `saveMovie` function for handling asynchronous API calls.
+
+6. **Error Handling**:
+   - Basic error handling is implemented in the API call using try/catch.
+
+7. **Conditional Rendering**:
+   - Used to display movie details only when available.
+
+8. **String Manipulation**:
+   - Used for extracting the release year from the full date.
+
+9. **Number Formatting**:
+   - `toFixed()` method used to format the vote average.
+
+10. **Inline Styling**:
+    - React Native's inline style objects are used for component styling.
+
+This app demonstrates a practical implementation of these technologies in a real-world scenario, creating a functional movie search application with a clean and intuitive user interface.
